@@ -1,0 +1,10 @@
+[Unit]
+Description=Check network connection
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/local/sbin/connman-reconnect.sh
+
+[Install]
+WantedBy=multi-user.target

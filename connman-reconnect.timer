@@ -1,0 +1,10 @@
+[Unit]
+Description=Check network
+
+[Timer]
+Persistent=true
+OnUnitActiveSec=6s
+OnBootSec=30s
+
+[Install]
+WantedBy=timers.target
