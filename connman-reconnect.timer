@@ -3,8 +3,8 @@ Description=Check network
 
 [Timer]
 Persistent=true
-OnUnitActiveSec=6s
-OnBootSec=30s
+OnUnitActiveSec=15s
+OnBootSec=60s
 
 [Install]
 WantedBy=timers.target

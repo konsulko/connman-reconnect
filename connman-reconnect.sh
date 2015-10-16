@@ -17,7 +17,7 @@ if [ $isNetworkALive -eq 0 ]; then
 fi
 service=`connmanctl services | grep "\*AO" | cut -d: -f2 | awk '{ print $3}'`
 if [ -z service ]; then
-	echo "Unable to retrieve network"
+	echo "Unable to retrieve connected WiFi"
 	exit 0
 fi
 echo $service
